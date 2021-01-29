@@ -1,0 +1,178 @@
+.coaches{
+	&__card{
+		box-shadow: 0px 4px 30px rgba(207, 207, 207, 0.25);
+		border: 1px solid rgba(0, 0, 0, 0.04);
+		border-radius: 2px;
+		margin: 8px 0px 0px 0px;
+	}
+	&__row{
+		display: flex;
+	}
+	&__image{
+		flex: 0 1 auto;
+	}
+	&__image img{
+		max-width: 100%;
+		min-height: 100%;
+	}
+	&__body{
+		flex: 1 0 auto;
+		padding: 43px 3% 0px 3%;
+		display: flex;
+		flex-direction: column;
+	}
+	&__link-button{
+		&--small{
+			display: none;
+		}
+	}
+	&__body{
+		&-number{
+			font-size: 16px;
+			font-weight: 700;
+			padding: 0px 0px 8px 0px;
+		}
+		&-title{
+			font-size: 24px;
+			font-weight: 700;
+			padding: 0px 0px 8px 0px;
+		}
+		&-subtitle{
+			font-size: 16px;
+			font-weight: 400;
+			padding: 0px 0px 24px 0px;
+		}
+		&-list{
+			padding: 0px 0px 0px 0px;
+			flex: 1 0 auto;
+
+		}
+		&-list ul{
+			list-style-type: none;
+			padding: 0;
+		}
+		&-list li{
+			font-size: 16px;
+			padding: 8px 0px 8px 0px;
+		}
+		&-list span{
+			opacity: 0.5;
+		}
+		&-button{
+			padding: 0px 0px 40px 0px;
+			&--big{
+				padding: 0px 0px 40px 0px;
+			}
+			&--small{
+				display: none;
+			}
+		}
+	}
+	&__control{
+		display: flex;
+		justify-content: center;
+		padding: 25px 0px 0px 0px;
+	}
+}
+
+.swiper-button-prev-uniq{
+	display: inline-block;
+	padding: 0px 40px;
+	z-index: 2;
+	&:active{
+		outline: none;
+		border: none;
+	}
+	&:focus{
+		outline: none;
+		border: none;
+	}
+}
+.swiper-button-next-uniq{
+	display: inline-block;
+	padding: 0px 40px;
+	z-index: 2;
+	&:active{
+		outline: none;
+		border: none;
+	}
+	&:focus{
+		outline: none;
+		border: none;
+	}
+}
+.swiper-pagination{
+	color: #000;
+	font-size: 20px;
+	z-index: 1;
+	display: inline-block;	
+}
+.swiper-pagination.swiper-pagination-fraction{
+	position: relative;
+	width: auto;
+	bottom: 0;
+}
+.prev{
+	transform: scale(-1, 1);
+}
+
+
+
+@media screen and (max-width: 900px){
+	.coaches{
+		&__body{
+			padding: 45px 2% 0px 2%;
+			&-number{
+				padding: 0px 0px 10px 0px;
+				font-size: 18px;
+			}
+			&-title{
+				padding: 0px 0px 8px 0px;
+				font-size: 24px;
+			}
+			&-subtitle{
+				font-size: 16px;
+				padding: 0px 0px 10px 0px;
+			}
+			&-list li{
+				padding: 0px 0px 15px 0px;
+				font-size: 16px;
+			}
+			&-button{
+				padding: 0px 10px 16px 0px;
+				text-align: end;
+			}
+		}
+		&__link-button{
+			&--big{
+				display: none;
+			}
+			&--small{
+				display: inline-block;
+				padding: 11px 15px;
+				border-radius: 50%;
+			}
+
+		}
+	}
+}
+
+@media screen and (max-width: 580px){
+	.coaches{
+		&__row{
+			flex-direction: column;
+		}
+		&__image{
+
+		}
+		&__image img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		&__control{
+			display: none;
+		}
+	}
+}
+

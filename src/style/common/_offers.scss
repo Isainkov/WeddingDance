@@ -1,0 +1,47 @@
+.offers{
+	&__row{
+		padding: 20px 0px 0px 0px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__column{
+		flex: 0 1 25%;
+		text-align: center;
+		margin: 80px 0px 0px 0px;
+	}
+	&__icon{
+		font-size: 56px;
+		color: #FF699F;
+		padding: 0px 0px 14px 0px;
+	}
+	&__description{
+		margin: 0;
+	}
+	&__text{
+		font-size: 16px;
+		font-weight: 400;
+		padding: 0 15% 0 15%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.offers{
+		&__row{
+			padding: 20px 0px 0px 0px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&__column{
+			flex: 0 1 50%;
+			text-align: center;
+			margin: 35px 0px 0px 0px;
+		}
+		&__icon{
+			font-size: 44px;
+			padding: 0px 0px 12px 0px;
+		}
+		&__text{
+			font-size: 13px;
+		}
+	}
+}
